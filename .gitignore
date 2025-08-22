@@ -18,8 +18,7 @@ xcuserdata/
 .build/
 Packages/
 Package.resolved
-.swiftpm/configuration/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/
 
 # CocoaPods
 Pods/
@@ -35,4 +34,4 @@ fastlane/screenshots/
 # Misc
 .DS_Store
 *.swp
-.netrc
+
