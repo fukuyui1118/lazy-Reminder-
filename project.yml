@@ -1,0 +1,37 @@
+name: LazyReminder
+options:
+  bundleIdPrefix: com.example
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+targets:
+  LazyReminder:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    bundleId: com.example.lazyreminder
+    sources:
+      - LazyReminder
+    resources:
+      - LazyReminder/Resources
+    info:
+      path: LazyReminder/Info.plist
+    scheme:
+      testTargets:
+        - LazyReminderTests
+  LazyReminderTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - Tests
+    dependencies:
+      - target: LazyReminder
+  LazyReminderUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - UITests
+    dependencies:
+      - target: LazyReminder
